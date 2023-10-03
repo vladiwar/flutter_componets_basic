@@ -1,6 +1,6 @@
+import 'package:fl_components/models/models.dart';
 import 'package:flutter/material.dart';
 
-import 'package:fl_components/models/models.dart';
 import '../screens/screens.dart';
 
 class AppRouter {
@@ -15,7 +15,8 @@ class AppRouter {
     MenuOption('Avatar', Icons.supervised_user_circle_outlined, 'Cicle Avatar', const AvatarScreen()),
     MenuOption('Animated', Icons.play_circle_filled_rounded, 'Animated screen', const AnimetedScreen()),
     MenuOption('Inputs', Icons.input_outlined, 'Inputs screen', const InputsScreen()),
-    MenuOption('slider', Icons.slideshow_rounded, 'Slider and checks', const sliderScreen())
+    MenuOption('slider', Icons.slideshow_rounded, 'Slider and checks', const sliderScreen()),
+    MenuOption('listviewbuilder', Icons.build_circle_outlined, 'InfinitScroll & pull to refresh', const ListViewBuilderScreen())
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRouters(){
